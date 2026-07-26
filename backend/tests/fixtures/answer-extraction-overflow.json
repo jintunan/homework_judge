@@ -1,0 +1,93 @@
+{
+  "questions": [
+    {
+      "questionNumber": "1",
+      "questionText": "选择正确的物理量关系。",
+      "type": "choice",
+      "maxScore": 3,
+      "standardAnswer": "A",
+      "scoringPoints": [{"description": "选择正确", "score": 3}],
+      "confidence": 0.95
+    },
+    {
+      "questionNumber": "2",
+      "questionText": "填写计算结果和单位。",
+      "type": "fill_blank",
+      "maxScore": "3分",
+      "standardAnswer": "示例结果",
+      "scoringPoints": [{"description": "结果正确", "score": 3}],
+      "confidence": "90%"
+    },
+    {
+      "questionNumber": "3",
+      "questionText": "根据条件完成选择。",
+      "type": "选择题",
+      "maxScore": 4,
+      "standardAnswer": "B",
+      "scoringPoints": [{"description": "选择正确", "score": 4}],
+      "confidence": 0.9
+    },
+    {
+      "questionNumber": "4",
+      "questionText": "写出所求物理量。",
+      "type": "填空题",
+      "maxScore": 4,
+      "standardAnswer": "示例答案",
+      "scoringPoints": [{"description": "答案正确", "score": 4}],
+      "confidence": 0.88
+    },
+    {
+      "questionNumber": "5",
+      "questionText": "写出计算过程一。",
+      "type": "calculation",
+      "maxScore": 10,
+      "standardAnswer": "示例过程一",
+      "scoringPoints": [
+        {"description": "公式", "score": 4},
+        {"description": "代入", "score": 4},
+        {"description": "结果", "score": 4}
+      ],
+      "confidence": 0.85
+    },
+    {
+      "questionNumber": "6",
+      "questionText": "写出计算过程二。",
+      "type": "calculation",
+      "maxScore": 12,
+      "standardAnswer": "示例过程二",
+      "scoringPoints": [
+        {"description": "关系式", "score": 5},
+        {"description": "计算", "score": 5},
+        {"description": "结论", "score": 5}
+      ],
+      "confidence": 0.84
+    },
+    {
+      "questionNumber": "7",
+      "questionText": "写出计算过程三。",
+      "type": "calculation",
+      "maxScore": 14,
+      "standardAnswer": "示例过程三",
+      "scoringPoints": [
+        {"description": "分析", "score": 6},
+        {"description": "公式", "score": 6},
+        {"description": "结果", "score": 6}
+      ],
+      "confidence": 0.83
+    },
+    {
+      "questionNumber": "8",
+      "questionText": "写出计算过程四。",
+      "type": "calculation",
+      "maxScore": 10,
+      "standardAnswer": "示例过程四",
+      "scoringPoints": [
+        {"description": "步骤一", "score": 5},
+        {"description": "步骤二", "score": 5},
+        {"description": "步骤三", "score": 5}
+      ],
+      "confidence": 0.82
+    }
+  ],
+  "overallNote": "脱敏结构测试"
+}

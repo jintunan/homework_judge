@@ -1,0 +1,34 @@
+[project]
+name = "homework-judge"
+version = "0.2.0"
+description = "Single-server homework grading agent with a Python backend"
+requires-python = ">=3.12,<3.13"
+
+[tool.pytest.ini_options]
+testpaths = ["backend/tests"]
+pythonpath = ["backend"]
+asyncio_mode = "auto"
+addopts = "-ra --basetemp=.tmp/pytest"
+
+[tool.mypy]
+python_version = "3.12"
+files = ["backend/homework_judge"]
+strict = true
+warn_unused_ignores = true
+plugins = ["pydantic.mypy"]
+
+[[tool.mypy.overrides]]
+module = ["pypdfium2.*"]
+ignore_missing_imports = true
+
+[tool.ruff]
+target-version = "py312"
+line-length = 100
+src = ["backend"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "ASYNC", "RUF"]
+ignore = ["B008", "RUF001"]
+
+[tool.ruff.format]
+quote-style = "double"
