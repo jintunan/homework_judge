@@ -1,0 +1,22 @@
+.env
+.venv/
+node_modules/
+.pnpm-store/
+dist/
+data/runtime/
+# Local source documents, third-party corpora, generated benchmarks, and test work areas.
+data/dataset/
+data/external/
+data/grading_benchmark/
+data/tmp/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.tmp/
+.tmp-*/
+.tmp-codex-*.sqlite*
+test_result/
+__pycache__/
+*.egg-info/
+*.py[cod]
+*.log

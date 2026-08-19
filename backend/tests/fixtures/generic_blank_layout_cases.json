@@ -1,0 +1,447 @@
+{
+  "schemaVersion": 1,
+  "fixtureKind": "generic_blank_layout_cases",
+  "coordinateSpace": {
+    "unit": "normalized",
+    "origin": "top_left",
+    "minimum": 0.0,
+    "maximum": 1.0
+  },
+  "cases": [
+    {
+      "caseId": "single-inline-q17",
+      "metamorphicGroup": null,
+      "question": {
+        "number": 17,
+        "text": "Neutral prompt: record the first observed value in the response slot.",
+        "type": "fill_blank",
+        "pageNumbers": [2],
+        "maxScore": "2.0"
+      },
+      "layoutTraits": ["single_blank", "inline"],
+      "frameRegions": [
+        {
+          "regionKey": "Q17-R1",
+          "pageNumber": 2,
+          "polygon": [
+            {"x": 0.08, "y": 0.18},
+            {"x": 0.92, "y": 0.18},
+            {"x": 0.92, "y": 0.42},
+            {"x": 0.08, "y": 0.42}
+          ]
+        }
+      ],
+      "visualContextRegions": [
+        {
+          "contextRegionKey": "Q17-C1",
+          "pageNumber": 2,
+          "polygon": [
+            {"x": 0.30, "y": 0.22},
+            {"x": 0.78, "y": 0.22},
+            {"x": 0.78, "y": 0.36},
+            {"x": 0.30, "y": 0.36}
+          ]
+        }
+      ],
+      "blanks": [
+        {
+          "blankKey": "B1",
+          "subquestionKey": "S1",
+          "referenceAnswer": "alpha",
+          "maxScore": "2.0",
+          "anchor": {"pageNumber": 2, "point": {"x": 0.55, "y": 0.29}},
+          "contextRegionKeys": ["Q17-C1"]
+        }
+      ],
+      "requiredContentSentinels": [
+        {"sentinelId": "stem", "kind": "stem", "pageNumber": 2, "point": {"x": 0.16, "y": 0.23}},
+        {"sentinelId": "slot-b1", "kind": "answer_slot", "pageNumber": 2, "point": {"x": 0.55, "y": 0.29}}
+      ],
+      "forbiddenSentinels": [
+        {"sentinelId": "page-header", "kind": "page_header", "pageNumber": 2, "point": {"x": 0.50, "y": 0.05}},
+        {"sentinelId": "next-question", "kind": "adjacent_question", "pageNumber": 2, "point": {"x": 0.14, "y": 0.55}}
+      ],
+      "distractorCandidates": [
+        {"candidateId": "printed-unit", "kind": "printed_unit", "pageNumber": 2, "point": {"x": 0.72, "y": 0.29}, "mustNotCreateBlank": true}
+      ]
+    },
+    {
+      "caseId": "two-same-row-q204",
+      "metamorphicGroup": null,
+      "question": {
+        "number": 204,
+        "text": "Write one symbol in each of the two response positions, then inspect the printed choices.",
+        "type": "fill_blank",
+        "pageNumbers": [7],
+        "maxScore": "4.0"
+      },
+      "layoutTraits": ["same_row", "shared_visual_context", "option_interference"],
+      "frameRegions": [
+        {
+          "regionKey": "Q204-R1",
+          "pageNumber": 7,
+          "polygon": [
+            {"x": 0.12, "y": 0.14},
+            {"x": 0.87, "y": 0.14},
+            {"x": 0.87, "y": 0.50},
+            {"x": 0.12, "y": 0.50}
+          ]
+        }
+      ],
+      "visualContextRegions": [
+        {
+          "contextRegionKey": "Q204-C1",
+          "pageNumber": 7,
+          "polygon": [
+            {"x": 0.18, "y": 0.24},
+            {"x": 0.79, "y": 0.24},
+            {"x": 0.79, "y": 0.38},
+            {"x": 0.18, "y": 0.38}
+          ]
+        }
+      ],
+      "blanks": [
+        {
+          "blankKey": "B1",
+          "subquestionKey": "S1",
+          "referenceAnswer": "north",
+          "maxScore": "1.5",
+          "anchor": {"pageNumber": 7, "point": {"x": 0.38, "y": 0.31}},
+          "contextRegionKeys": ["Q204-C1"]
+        },
+        {
+          "blankKey": "B2",
+          "subquestionKey": "S1",
+          "referenceAnswer": "south",
+          "maxScore": "2.5",
+          "anchor": {"pageNumber": 7, "point": {"x": 0.69, "y": 0.31}},
+          "contextRegionKeys": ["Q204-C1"]
+        }
+      ],
+      "requiredContentSentinels": [
+        {"sentinelId": "stem", "kind": "stem", "pageNumber": 7, "point": {"x": 0.18, "y": 0.19}},
+        {"sentinelId": "slot-b1", "kind": "answer_slot", "pageNumber": 7, "point": {"x": 0.38, "y": 0.31}},
+        {"sentinelId": "slot-b2", "kind": "answer_slot", "pageNumber": 7, "point": {"x": 0.69, "y": 0.31}},
+        {"sentinelId": "option-one", "kind": "declared_option", "pageNumber": 7, "point": {"x": 0.25, "y": 0.43}},
+        {"sentinelId": "option-two", "kind": "declared_option", "pageNumber": 7, "point": {"x": 0.60, "y": 0.43}}
+      ],
+      "forbiddenSentinels": [
+        {"sentinelId": "previous-question", "kind": "adjacent_question", "pageNumber": 7, "point": {"x": 0.15, "y": 0.08}},
+        {"sentinelId": "next-question", "kind": "adjacent_question", "pageNumber": 7, "point": {"x": 0.15, "y": 0.62}}
+      ],
+      "distractorCandidates": [
+        {"candidateId": "numeric-option-label", "kind": "printed_option_label", "pageNumber": 7, "point": {"x": 0.17, "y": 0.43}, "mustNotCreateBlank": true},
+        {"candidateId": "printed-option-text", "kind": "printed_option_text", "pageNumber": 7, "point": {"x": 0.34, "y": 0.43}, "mustNotCreateBlank": true}
+      ]
+    },
+    {
+      "caseId": "three-shared-multipart-base",
+      "metamorphicGroup": "three-shared-multipart",
+      "question": {
+        "number": 31,
+        "text": "Part one has two vertically separated responses; part two has one response beside a diagram.",
+        "type": "fill_blank",
+        "pageNumbers": [5],
+        "maxScore": "5.0"
+      },
+      "layoutTraits": ["cross_line", "multiple_subquestions", "shared_visual_context", "option_interference", "diagram_text_interference"],
+      "frameRegions": [
+        {
+          "regionKey": "Q31-R1",
+          "pageNumber": 5,
+          "polygon": [
+            {"x": 0.09, "y": 0.10},
+            {"x": 0.91, "y": 0.10},
+            {"x": 0.91, "y": 0.78},
+            {"x": 0.09, "y": 0.78}
+          ]
+        }
+      ],
+      "visualContextRegions": [
+        {
+          "contextRegionKey": "Q31-C1",
+          "pageNumber": 5,
+          "polygon": [
+            {"x": 0.14, "y": 0.21},
+            {"x": 0.86, "y": 0.21},
+            {"x": 0.86, "y": 0.48},
+            {"x": 0.14, "y": 0.48}
+          ]
+        },
+        {
+          "contextRegionKey": "Q31-C2",
+          "pageNumber": 5,
+          "polygon": [
+            {"x": 0.14, "y": 0.49},
+            {"x": 0.86, "y": 0.49},
+            {"x": 0.86, "y": 0.68},
+            {"x": 0.14, "y": 0.68}
+          ]
+        }
+      ],
+      "blanks": [
+        {
+          "blankKey": "B1",
+          "subquestionKey": "S1",
+          "referenceAnswer": "red",
+          "maxScore": "1.0",
+          "anchor": {"pageNumber": 5, "point": {"x": 0.43, "y": 0.29}},
+          "contextRegionKeys": ["Q31-C1"]
+        },
+        {
+          "blankKey": "B2",
+          "subquestionKey": "S1",
+          "referenceAnswer": "blue",
+          "maxScore": "1.5",
+          "anchor": {"pageNumber": 5, "point": {"x": 0.55, "y": 0.41}},
+          "contextRegionKeys": ["Q31-C1"]
+        },
+        {
+          "blankKey": "B3",
+          "subquestionKey": "S2",
+          "referenceAnswer": "green",
+          "maxScore": "2.5",
+          "anchor": {"pageNumber": 5, "point": {"x": 0.68, "y": 0.60}},
+          "contextRegionKeys": ["Q31-C2"]
+        }
+      ],
+      "requiredContentSentinels": [
+        {"sentinelId": "stem", "kind": "stem", "pageNumber": 5, "point": {"x": 0.16, "y": 0.15}},
+        {"sentinelId": "subquestion-one", "kind": "subquestion", "pageNumber": 5, "point": {"x": 0.16, "y": 0.24}},
+        {"sentinelId": "slot-b1", "kind": "answer_slot", "pageNumber": 5, "point": {"x": 0.43, "y": 0.29}},
+        {"sentinelId": "slot-b2", "kind": "answer_slot", "pageNumber": 5, "point": {"x": 0.55, "y": 0.41}},
+        {"sentinelId": "subquestion-two", "kind": "subquestion", "pageNumber": 5, "point": {"x": 0.16, "y": 0.52}},
+        {"sentinelId": "diagram", "kind": "diagram", "pageNumber": 5, "point": {"x": 0.50, "y": 0.54}},
+        {"sentinelId": "slot-b3", "kind": "answer_slot", "pageNumber": 5, "point": {"x": 0.68, "y": 0.60}},
+        {"sentinelId": "option-a", "kind": "declared_option", "pageNumber": 5, "point": {"x": 0.20, "y": 0.70}},
+        {"sentinelId": "option-b", "kind": "declared_option", "pageNumber": 5, "point": {"x": 0.40, "y": 0.70}},
+        {"sentinelId": "option-c", "kind": "declared_option", "pageNumber": 5, "point": {"x": 0.60, "y": 0.70}},
+        {"sentinelId": "option-d", "kind": "declared_option", "pageNumber": 5, "point": {"x": 0.80, "y": 0.70}}
+      ],
+      "forbiddenSentinels": [
+        {"sentinelId": "page-header", "kind": "page_header", "pageNumber": 5, "point": {"x": 0.50, "y": 0.04}},
+        {"sentinelId": "next-question", "kind": "adjacent_question", "pageNumber": 5, "point": {"x": 0.12, "y": 0.85}}
+      ],
+      "distractorCandidates": [
+        {"candidateId": "letter-option-label", "kind": "printed_option_label", "pageNumber": 5, "point": {"x": 0.14, "y": 0.70}, "mustNotCreateBlank": true},
+        {"candidateId": "diagram-label", "kind": "diagram_label", "pageNumber": 5, "point": {"x": 0.52, "y": 0.54}, "mustNotCreateBlank": true},
+        {"candidateId": "question-number", "kind": "question_number", "pageNumber": 5, "point": {"x": 0.11, "y": 0.15}, "mustNotCreateBlank": true}
+      ]
+    },
+    {
+      "caseId": "three-shared-multipart-transformed",
+      "metamorphicGroup": "three-shared-multipart",
+      "question": {
+        "number": 912,
+        "text": "全新文本：第一小问跨两行填写，第二小问参考图表后填写一个结果。",
+        "type": "fill_blank",
+        "pageNumbers": [11],
+        "maxScore": "5.0"
+      },
+      "layoutTraits": ["cross_line", "multiple_subquestions", "shared_visual_context", "option_interference", "diagram_text_interference"],
+      "frameRegions": [
+        {
+          "regionKey": "Q912-R1",
+          "pageNumber": 11,
+          "polygon": [
+            {"x": 0.04, "y": 0.22},
+            {"x": 0.82, "y": 0.22},
+            {"x": 0.82, "y": 0.94},
+            {"x": 0.04, "y": 0.94}
+          ]
+        }
+      ],
+      "visualContextRegions": [
+        {
+          "contextRegionKey": "Q912-C1",
+          "pageNumber": 11,
+          "polygon": [
+            {"x": 0.10, "y": 0.32},
+            {"x": 0.75, "y": 0.32},
+            {"x": 0.75, "y": 0.59},
+            {"x": 0.10, "y": 0.59}
+          ]
+        },
+        {
+          "contextRegionKey": "Q912-C2",
+          "pageNumber": 11,
+          "polygon": [
+            {"x": 0.10, "y": 0.60},
+            {"x": 0.75, "y": 0.60},
+            {"x": 0.75, "y": 0.84},
+            {"x": 0.10, "y": 0.84}
+          ]
+        }
+      ],
+      "blanks": [
+        {
+          "blankKey": "B1",
+          "subquestionKey": "S1",
+          "referenceAnswer": "甲",
+          "maxScore": "1.0",
+          "anchor": {"pageNumber": 11, "point": {"x": 0.32, "y": 0.40}},
+          "contextRegionKeys": ["Q912-C1"]
+        },
+        {
+          "blankKey": "B2",
+          "subquestionKey": "S1",
+          "referenceAnswer": "乙",
+          "maxScore": "1.5",
+          "anchor": {"pageNumber": 11, "point": {"x": 0.46, "y": 0.52}},
+          "contextRegionKeys": ["Q912-C1"]
+        },
+        {
+          "blankKey": "B3",
+          "subquestionKey": "S2",
+          "referenceAnswer": "丙",
+          "maxScore": "2.5",
+          "anchor": {"pageNumber": 11, "point": {"x": 0.62, "y": 0.74}},
+          "contextRegionKeys": ["Q912-C2"]
+        }
+      ],
+      "requiredContentSentinels": [
+        {"sentinelId": "stem", "kind": "stem", "pageNumber": 11, "point": {"x": 0.11, "y": 0.27}},
+        {"sentinelId": "subquestion-one", "kind": "subquestion", "pageNumber": 11, "point": {"x": 0.11, "y": 0.35}},
+        {"sentinelId": "slot-b1", "kind": "answer_slot", "pageNumber": 11, "point": {"x": 0.32, "y": 0.40}},
+        {"sentinelId": "slot-b2", "kind": "answer_slot", "pageNumber": 11, "point": {"x": 0.46, "y": 0.52}},
+        {"sentinelId": "subquestion-two", "kind": "subquestion", "pageNumber": 11, "point": {"x": 0.11, "y": 0.63}},
+        {"sentinelId": "diagram", "kind": "diagram", "pageNumber": 11, "point": {"x": 0.42, "y": 0.66}},
+        {"sentinelId": "slot-b3", "kind": "answer_slot", "pageNumber": 11, "point": {"x": 0.62, "y": 0.74}},
+        {"sentinelId": "option-a", "kind": "declared_option", "pageNumber": 11, "point": {"x": 0.15, "y": 0.86}},
+        {"sentinelId": "option-b", "kind": "declared_option", "pageNumber": 11, "point": {"x": 0.32, "y": 0.86}},
+        {"sentinelId": "option-c", "kind": "declared_option", "pageNumber": 11, "point": {"x": 0.49, "y": 0.86}},
+        {"sentinelId": "option-d", "kind": "declared_option", "pageNumber": 11, "point": {"x": 0.66, "y": 0.86}}
+      ],
+      "forbiddenSentinels": [
+        {"sentinelId": "page-header", "kind": "page_header", "pageNumber": 11, "point": {"x": 0.50, "y": 0.06}},
+        {"sentinelId": "next-question", "kind": "adjacent_question", "pageNumber": 11, "point": {"x": 0.10, "y": 0.98}}
+      ],
+      "distractorCandidates": [
+        {"candidateId": "numeric-option-label", "kind": "printed_option_label", "pageNumber": 11, "point": {"x": 0.10, "y": 0.86}, "mustNotCreateBlank": true},
+        {"candidateId": "diagram-label", "kind": "diagram_label", "pageNumber": 11, "point": {"x": 0.44, "y": 0.66}, "mustNotCreateBlank": true},
+        {"candidateId": "question-number", "kind": "question_number", "pageNumber": 11, "point": {"x": 0.06, "y": 0.27}, "mustNotCreateBlank": true}
+      ]
+    },
+    {
+      "caseId": "five-cross-page-q1507",
+      "metamorphicGroup": null,
+      "question": {
+        "number": 1507,
+        "text": "Five response positions continue across a page break and share two visual context regions.",
+        "type": "fill_blank",
+        "pageNumbers": [21, 22],
+        "maxScore": "9.0"
+      },
+      "layoutTraits": ["cross_line", "multiple_subquestions", "shared_visual_context", "cross_page", "diagram_text_interference"],
+      "frameRegions": [
+        {
+          "regionKey": "Q1507-R1",
+          "pageNumber": 21,
+          "polygon": [
+            {"x": 0.07, "y": 0.62},
+            {"x": 0.93, "y": 0.62},
+            {"x": 0.93, "y": 0.96},
+            {"x": 0.07, "y": 0.96}
+          ]
+        },
+        {
+          "regionKey": "Q1507-R2",
+          "pageNumber": 22,
+          "polygon": [
+            {"x": 0.07, "y": 0.05},
+            {"x": 0.93, "y": 0.05},
+            {"x": 0.93, "y": 0.58},
+            {"x": 0.07, "y": 0.58}
+          ]
+        }
+      ],
+      "visualContextRegions": [
+        {
+          "contextRegionKey": "Q1507-C1",
+          "pageNumber": 21,
+          "polygon": [
+            {"x": 0.13, "y": 0.69},
+            {"x": 0.87, "y": 0.69},
+            {"x": 0.87, "y": 0.90},
+            {"x": 0.13, "y": 0.90}
+          ]
+        },
+        {
+          "contextRegionKey": "Q1507-C2",
+          "pageNumber": 22,
+          "polygon": [
+            {"x": 0.13, "y": 0.12},
+            {"x": 0.87, "y": 0.12},
+            {"x": 0.87, "y": 0.45},
+            {"x": 0.13, "y": 0.45}
+          ]
+        }
+      ],
+      "blanks": [
+        {
+          "blankKey": "B1",
+          "subquestionKey": "S1",
+          "referenceAnswer": "one",
+          "maxScore": "1.0",
+          "anchor": {"pageNumber": 21, "point": {"x": 0.27, "y": 0.75}},
+          "contextRegionKeys": ["Q1507-C1"]
+        },
+        {
+          "blankKey": "B2",
+          "subquestionKey": "S1",
+          "referenceAnswer": "two",
+          "maxScore": "1.25",
+          "anchor": {"pageNumber": 21, "point": {"x": 0.50, "y": 0.75}},
+          "contextRegionKeys": ["Q1507-C1"]
+        },
+        {
+          "blankKey": "B3",
+          "subquestionKey": "S2",
+          "referenceAnswer": "three",
+          "maxScore": "1.75",
+          "anchor": {"pageNumber": 21, "point": {"x": 0.73, "y": 0.85}},
+          "contextRegionKeys": ["Q1507-C1"]
+        },
+        {
+          "blankKey": "B4",
+          "subquestionKey": "S3",
+          "referenceAnswer": "four",
+          "maxScore": "2.0",
+          "anchor": {"pageNumber": 22, "point": {"x": 0.35, "y": 0.22}},
+          "contextRegionKeys": ["Q1507-C2"]
+        },
+        {
+          "blankKey": "B5",
+          "subquestionKey": "S3",
+          "referenceAnswer": "five",
+          "maxScore": "3.0",
+          "anchor": {"pageNumber": 22, "point": {"x": 0.65, "y": 0.36}},
+          "contextRegionKeys": ["Q1507-C2"]
+        }
+      ],
+      "requiredContentSentinels": [
+        {"sentinelId": "stem", "kind": "stem", "pageNumber": 21, "point": {"x": 0.14, "y": 0.66}},
+        {"sentinelId": "subquestion-one", "kind": "subquestion", "pageNumber": 21, "point": {"x": 0.14, "y": 0.72}},
+        {"sentinelId": "slot-b1", "kind": "answer_slot", "pageNumber": 21, "point": {"x": 0.27, "y": 0.75}},
+        {"sentinelId": "slot-b2", "kind": "answer_slot", "pageNumber": 21, "point": {"x": 0.50, "y": 0.75}},
+        {"sentinelId": "subquestion-two", "kind": "subquestion", "pageNumber": 21, "point": {"x": 0.14, "y": 0.83}},
+        {"sentinelId": "slot-b3", "kind": "answer_slot", "pageNumber": 21, "point": {"x": 0.73, "y": 0.85}},
+        {"sentinelId": "continued-stem", "kind": "stem_continuation", "pageNumber": 22, "point": {"x": 0.14, "y": 0.09}},
+        {"sentinelId": "subquestion-three", "kind": "subquestion", "pageNumber": 22, "point": {"x": 0.14, "y": 0.16}},
+        {"sentinelId": "slot-b4", "kind": "answer_slot", "pageNumber": 22, "point": {"x": 0.35, "y": 0.22}},
+        {"sentinelId": "table", "kind": "table", "pageNumber": 22, "point": {"x": 0.50, "y": 0.30}},
+        {"sentinelId": "slot-b5", "kind": "answer_slot", "pageNumber": 22, "point": {"x": 0.65, "y": 0.36}}
+      ],
+      "forbiddenSentinels": [
+        {"sentinelId": "previous-question", "kind": "adjacent_question", "pageNumber": 21, "point": {"x": 0.15, "y": 0.55}},
+        {"sentinelId": "page-21-footer", "kind": "page_footer", "pageNumber": 21, "point": {"x": 0.50, "y": 0.99}},
+        {"sentinelId": "page-22-header", "kind": "page_header", "pageNumber": 22, "point": {"x": 0.50, "y": 0.015}},
+        {"sentinelId": "next-question", "kind": "adjacent_question", "pageNumber": 22, "point": {"x": 0.15, "y": 0.70}}
+      ],
+      "distractorCandidates": [
+        {"candidateId": "diagram-label", "kind": "diagram_label", "pageNumber": 21, "point": {"x": 0.60, "y": 0.82}, "mustNotCreateBlank": true},
+        {"candidateId": "table-header", "kind": "table_header", "pageNumber": 22, "point": {"x": 0.50, "y": 0.27}, "mustNotCreateBlank": true}
+      ]
+    }
+  ]
+}

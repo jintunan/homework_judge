@@ -1,0 +1,44 @@
+{
+  "name": "homework-judge",
+  "version": "0.1.0",
+  "private": true,
+  "packageManager": "pnpm@11.9.0",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently -k -n API,WEB -c cyan,magenta \".\\.venv\\Scripts\\python.exe -m uvicorn homework_judge.main:app --app-dir backend --host 127.0.0.1 --port 8787 --reload --reload-dir backend/homework_judge\" \"vite\"",
+    "dev:server": ".\\.venv\\Scripts\\python.exe -m uvicorn homework_judge.main:app --app-dir backend --host 127.0.0.1 --port 8787 --reload --reload-dir backend/homework_judge",
+    "dev:client": "vite",
+    "build": "node scripts/clean-build.mjs && tsc --noEmit && vite build && .\\.venv\\Scripts\\python.exe -m compileall backend/homework_judge",
+    "start": ".\\.venv\\Scripts\\python.exe backend/run_server.py",
+    "typecheck": "tsc --noEmit",
+    "lint": "tsc --noEmit && .\\.venv\\Scripts\\python.exe -m ruff check backend && .\\.venv\\Scripts\\python.exe -m mypy backend/homework_judge",
+    "test": "vitest run && .\\.venv\\Scripts\\python.exe -m pytest",
+    "test:ui": "vitest run",
+    "test:python": ".\\.venv\\Scripts\\python.exe -m pytest"
+  },
+  "dependencies": {
+    "@tanstack/react-query": "5.83.0",
+    "katex": "0.18.0",
+    "lucide-react": "0.468.0",
+    "mathlive": "0.109.1",
+    "react": "19.1.1",
+    "react-dom": "19.1.1",
+    "react-hook-form": "7.62.0",
+    "react-router-dom": "7.8.0",
+    "zod": "4.0.14"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "6.6.4",
+    "@testing-library/react": "16.3.0",
+    "@testing-library/user-event": "14.6.1",
+    "@types/node": "24.1.0",
+    "@types/react": "19.1.9",
+    "@types/react-dom": "19.1.7",
+    "@vitejs/plugin-react": "4.7.0",
+    "concurrently": "9.2.0",
+    "jsdom": "26.1.0",
+    "typescript": "5.9.2",
+    "vite": "7.0.6",
+    "vitest": "3.2.4"
+  }
+}
