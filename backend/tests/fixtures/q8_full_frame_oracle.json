@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 1,
+  "fixtureKind": "real_sample_oracle",
+  "oracleId": "physics-unit-55662305-q8-page3",
+  "reviewStatus": "candidate",
+  "reviewedBy": null,
+  "reviewedAt": null,
+  "candidateReason": "The benchmark and student labels explicitly state that answers and scores are synthetic and unreviewed. Geometry was measured visually from the rendered source image and has not been confirmed by a teacher.",
+  "coordinateSpace": {
+    "unit": "normalized",
+    "origin": "top_left",
+    "minimum": 0.0,
+    "maximum": 1.0
+  },
+  "source": {
+    "datasetId": "physics_unit_55662305_reference_layout_v8",
+    "datasetReviewStatus": "synthetic_answers_reference_layout_unreviewed",
+    "sourceImage": {
+      "path": "data/grading_benchmark/physics_unit_55662305_reference_layout_v8/students/student_01/page-03.jpg",
+      "sha256": "5ac4816f4ecb740b12ba3f6e3798efe04a1eaa96ccea734794d0794371c35b18",
+      "pageNumber": 3,
+      "width": 1489,
+      "height": 2105
+    },
+    "sourcePdf": {
+      "path": "data/dataset/第1章 静电力与电场强度 单元测评 -2025-2026学年高二上学期物理鲁科版必修第三册 [55662305].pdf",
+      "sha256": "25b19fe710026cde1521073d707a1ccf43ddba3c7725aa594108bede7819381e"
+    },
+    "datasetManifest": {
+      "path": "data/grading_benchmark/physics_unit_55662305_reference_layout_v8/manifest.json",
+      "sha256": "ae97ef9ca483ae4dd24887321eea469b0bf97fdc22d8679b7e043a2b18752a84"
+    },
+    "questionCatalog": {
+      "path": "data/grading_benchmark/physics_unit_55662305_reference_layout_v8/questions.json",
+      "sha256": "6534dbfe6f6d76f135724435bddadd920db9d65d373286447a34ca4cdea20244"
+    },
+    "studentLabel": {
+      "path": "data/grading_benchmark/physics_unit_55662305_reference_layout_v8/labels/student_01.json",
+      "sha256": "2ba86145a13084a583d288a69134b5cd541d2942e90a78eb9e5d47fdf0b76a66"
+    }
+  },
+  "geometryProvenance": {
+    "method": "visual_measurement_on_source_image",
+    "measuredBy": "codex",
+    "status": "candidate",
+    "notes": "Normalized candidate coordinates identify the visible q8 content and adjacent exclusions. A teacher must inspect and adjust them before reviewStatus can become reviewed."
+  },
+  "question": {
+    "id": "q8",
+    "number": 8,
+    "textSource": "rendered_source_image",
+    "type": "multiple_choice",
+    "pageNumbers": [3],
+    "maxScore": "6",
+    "referenceAnswer": "BD"
+  },
+  "frameRegions": [
+    {
+      "regionKey": "Q8-R1-CANDIDATE",
+      "pageNumber": 3,
+      "polygon": [
+        {"x": 0.095, "y": 0.370},
+        {"x": 0.915, "y": 0.370},
+        {"x": 0.915, "y": 0.805},
+        {"x": 0.095, "y": 0.805}
+      ]
+    }
+  ],
+  "visualContextRegions": [
+    {
+      "contextRegionKey": "Q8-C1-CANDIDATE",
+      "pageNumber": 3,
+      "polygon": [
+        {"x": 0.120, "y": 0.385},
+        {"x": 0.880, "y": 0.385},
+        {"x": 0.880, "y": 0.790},
+        {"x": 0.120, "y": 0.790}
+      ]
+    }
+  ],
+  "blanks": [],
+  "responseAnchors": [
+    {
+      "responseKey": "R1",
+      "referenceAnswer": "BD",
+      "maxScore": "6",
+      "anchor": {"pageNumber": 3, "point": {"x": 0.175, "y": 0.480}},
+      "contextRegionKeys": ["Q8-C1-CANDIDATE"]
+    }
+  ],
+  "requiredContentSentinels": [
+    {"sentinelId": "stem", "kind": "stem", "pageNumber": 3, "point": {"x": 0.160, "y": 0.400}},
+    {"sentinelId": "response-slot", "kind": "answer_slot", "pageNumber": 3, "point": {"x": 0.175, "y": 0.480}},
+    {"sentinelId": "diagram", "kind": "diagram", "pageNumber": 3, "point": {"x": 0.500, "y": 0.585}},
+    {"sentinelId": "option-a", "kind": "declared_option", "pageNumber": 3, "point": {"x": 0.190, "y": 0.726}},
+    {"sentinelId": "option-b", "kind": "declared_option", "pageNumber": 3, "point": {"x": 0.550, "y": 0.726}},
+    {"sentinelId": "option-c", "kind": "declared_option", "pageNumber": 3, "point": {"x": 0.190, "y": 0.775}},
+    {"sentinelId": "option-d", "kind": "declared_option", "pageNumber": 3, "point": {"x": 0.630, "y": 0.775}}
+  ],
+  "forbiddenSentinels": [
+    {"sentinelId": "question-7-tail", "kind": "adjacent_question", "pageNumber": 3, "point": {"x": 0.160, "y": 0.340}},
+    {"sentinelId": "next-section-heading", "kind": "section_heading", "pageNumber": 3, "point": {"x": 0.180, "y": 0.835}},
+    {"sentinelId": "question-9-stem", "kind": "adjacent_question", "pageNumber": 3, "point": {"x": 0.180, "y": 0.875}},
+    {"sentinelId": "page-footer", "kind": "page_footer", "pageNumber": 3, "point": {"x": 0.500, "y": 0.950}}
+  ],
+  "distractorCandidates": [
+    {"candidateId": "diagram-label-o", "kind": "diagram_label", "pageNumber": 3, "point": {"x": 0.455, "y": 0.535}, "mustNotCreateBlank": true},
+    {"candidateId": "printed-option-label-a", "kind": "printed_option_label", "pageNumber": 3, "point": {"x": 0.110, "y": 0.726}, "mustNotCreateBlank": true}
+  ]
+}

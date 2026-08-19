@@ -1,0 +1,141 @@
+{
+  "schemaVersion": 1,
+  "fixtureKind": "real_sample_oracle",
+  "oracleId": "physics-unit-55662305-q11-page4",
+  "reviewStatus": "candidate",
+  "reviewedBy": null,
+  "reviewedAt": null,
+  "candidateReason": "The benchmark and student labels explicitly state that answers and scores are synthetic and unreviewed. Geometry was measured visually from the rendered source image and has not been confirmed by a teacher.",
+  "coordinateSpace": {
+    "unit": "normalized",
+    "origin": "top_left",
+    "minimum": 0.0,
+    "maximum": 1.0
+  },
+  "source": {
+    "datasetId": "physics_unit_55662305_reference_layout_v8",
+    "datasetReviewStatus": "synthetic_answers_reference_layout_unreviewed",
+    "sourceImage": {
+      "path": "data/grading_benchmark/physics_unit_55662305_reference_layout_v8/students/student_01/page-04.jpg",
+      "sha256": "2fb98f83b1606a480916e42d0d6447d8da0d2ec94d3eb7fe449a83217d922e6d",
+      "pageNumber": 4,
+      "width": 1489,
+      "height": 2105
+    },
+    "sourcePdf": {
+      "path": "data/dataset/第1章 静电力与电场强度 单元测评 -2025-2026学年高二上学期物理鲁科版必修第三册 [55662305].pdf",
+      "sha256": "25b19fe710026cde1521073d707a1ccf43ddba3c7725aa594108bede7819381e"
+    },
+    "datasetManifest": {
+      "path": "data/grading_benchmark/physics_unit_55662305_reference_layout_v8/manifest.json",
+      "sha256": "ae97ef9ca483ae4dd24887321eea469b0bf97fdc22d8679b7e043a2b18752a84"
+    },
+    "questionCatalog": {
+      "path": "data/grading_benchmark/physics_unit_55662305_reference_layout_v8/questions.json",
+      "sha256": "6534dbfe6f6d76f135724435bddadd920db9d65d373286447a34ca4cdea20244"
+    },
+    "studentLabel": {
+      "path": "data/grading_benchmark/physics_unit_55662305_reference_layout_v8/labels/student_01.json",
+      "sha256": "2ba86145a13084a583d288a69134b5cd541d2942e90a78eb9e5d47fdf0b76a66"
+    }
+  },
+  "geometryProvenance": {
+    "method": "visual_measurement_on_source_image",
+    "measuredBy": "codex",
+    "status": "candidate",
+    "notes": "Normalized candidate coordinates identify the visible q11 content, three response anchors, and adjacent exclusions. A teacher must inspect and adjust them before reviewStatus can become reviewed."
+  },
+  "question": {
+    "id": "q11",
+    "number": 11,
+    "textSource": "rendered_source_image",
+    "type": "fill_blank",
+    "pageNumbers": [4],
+    "maxScore": "5",
+    "referenceAnswers": ["电荷转移", "遵守", "CD"]
+  },
+  "frameRegions": [
+    {
+      "regionKey": "Q11-R1-CANDIDATE",
+      "pageNumber": 4,
+      "polygon": [
+        {"x": 0.095, "y": 0.165},
+        {"x": 0.915, "y": 0.165},
+        {"x": 0.915, "y": 0.580},
+        {"x": 0.095, "y": 0.580}
+      ]
+    }
+  ],
+  "visualContextRegions": [
+    {
+      "contextRegionKey": "Q11-C1-CANDIDATE",
+      "pageNumber": 4,
+      "polygon": [
+        {"x": 0.120, "y": 0.225},
+        {"x": 0.880, "y": 0.225},
+        {"x": 0.880, "y": 0.300},
+        {"x": 0.120, "y": 0.300}
+      ]
+    },
+    {
+      "contextRegionKey": "Q11-C2-CANDIDATE",
+      "pageNumber": 4,
+      "polygon": [
+        {"x": 0.120, "y": 0.300},
+        {"x": 0.880, "y": 0.300},
+        {"x": 0.880, "y": 0.560},
+        {"x": 0.120, "y": 0.560}
+      ]
+    }
+  ],
+  "blanks": [
+    {
+      "blankKey": "B1",
+      "subquestionKey": "S1",
+      "referenceAnswer": "电荷转移",
+      "maxScore": "1",
+      "anchor": {"pageNumber": 4, "point": {"x": 0.370, "y": 0.245}},
+      "contextRegionKeys": ["Q11-C1-CANDIDATE"]
+    },
+    {
+      "blankKey": "B2",
+      "subquestionKey": "S1",
+      "referenceAnswer": "遵守",
+      "maxScore": "1",
+      "anchor": {"pageNumber": 4, "point": {"x": 0.200, "y": 0.283}},
+      "contextRegionKeys": ["Q11-C1-CANDIDATE"]
+    },
+    {
+      "blankKey": "B3",
+      "subquestionKey": "S2",
+      "referenceAnswer": "CD",
+      "maxScore": "3",
+      "anchor": {"pageNumber": 4, "point": {"x": 0.650, "y": 0.334}},
+      "contextRegionKeys": ["Q11-C2-CANDIDATE"]
+    }
+  ],
+  "responseAnchors": [],
+  "requiredContentSentinels": [
+    {"sentinelId": "stem", "kind": "stem", "pageNumber": 4, "point": {"x": 0.150, "y": 0.180}},
+    {"sentinelId": "subquestion-one", "kind": "subquestion", "pageNumber": 4, "point": {"x": 0.130, "y": 0.235}},
+    {"sentinelId": "slot-b1", "kind": "answer_slot", "pageNumber": 4, "point": {"x": 0.370, "y": 0.245}},
+    {"sentinelId": "slot-b2", "kind": "answer_slot", "pageNumber": 4, "point": {"x": 0.200, "y": 0.283}},
+    {"sentinelId": "subquestion-two", "kind": "subquestion", "pageNumber": 4, "point": {"x": 0.130, "y": 0.310}},
+    {"sentinelId": "slot-b3", "kind": "answer_slot", "pageNumber": 4, "point": {"x": 0.650, "y": 0.334}},
+    {"sentinelId": "diagram", "kind": "diagram", "pageNumber": 4, "point": {"x": 0.500, "y": 0.390}},
+    {"sentinelId": "option-a", "kind": "declared_option", "pageNumber": 4, "point": {"x": 0.150, "y": 0.430}},
+    {"sentinelId": "option-b", "kind": "declared_option", "pageNumber": 4, "point": {"x": 0.150, "y": 0.470}},
+    {"sentinelId": "option-c", "kind": "declared_option", "pageNumber": 4, "point": {"x": 0.150, "y": 0.510}},
+    {"sentinelId": "option-d", "kind": "declared_option", "pageNumber": 4, "point": {"x": 0.150, "y": 0.550}}
+  ],
+  "forbiddenSentinels": [
+    {"sentinelId": "question-10", "kind": "adjacent_question", "pageNumber": 4, "point": {"x": 0.150, "y": 0.100}},
+    {"sentinelId": "question-12", "kind": "adjacent_question", "pageNumber": 4, "point": {"x": 0.150, "y": 0.600}},
+    {"sentinelId": "page-footer", "kind": "page_footer", "pageNumber": 4, "point": {"x": 0.500, "y": 0.950}}
+  ],
+  "distractorCandidates": [
+    {"candidateId": "printed-instruction", "kind": "printed_instruction", "pageNumber": 4, "point": {"x": 0.710, "y": 0.245}, "mustNotCreateBlank": true},
+    {"candidateId": "diagram-label", "kind": "diagram_label", "pageNumber": 4, "point": {"x": 0.500, "y": 0.390}, "mustNotCreateBlank": true},
+    {"candidateId": "printed-option-label-a", "kind": "printed_option_label", "pageNumber": 4, "point": {"x": 0.110, "y": 0.430}, "mustNotCreateBlank": true}
+  ]
+}

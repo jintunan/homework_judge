@@ -1,0 +1,64 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "homework-judge"
+version = "0.1.0"
+description = "Local exam recognition and reference-answer matching workbench"
+requires-python = ">=3.12,<3.14"
+dependencies = [
+  "fastapi==0.116.1",
+  "httpx==0.28.1",
+  "numpy==2.2.4",
+  "opencv-python-headless==4.12.0.88",
+  "pillow==12.2.0",
+  "pint==0.25.3",
+  "pypdfium2==4.30.0",
+  "python-multipart==0.0.20",
+  "rapidfuzz==3.13.0",
+  "reportlab==5.0.0",
+  "sympy==1.14.0",
+  "uvicorn==0.35.0",
+]
+
+[project.optional-dependencies]
+dev = [
+  "mypy==1.17.1",
+  "pytest==8.4.1",
+  "pytest-asyncio==1.1.0",
+  "ruff==0.12.7",
+]
+
+[tool.setuptools]
+package-dir = {"" = "backend"}
+
+[tool.setuptools.packages.find]
+where = ["backend"]
+include = ["homework_judge*"]
+
+[tool.pytest.ini_options]
+testpaths = ["backend/tests"]
+pythonpath = ["backend"]
+asyncio_mode = "auto"
+addopts = "-ra"
+cache_dir = "data/runtime/pytest-cache"
+
+[tool.ruff]
+target-version = "py312"
+line-length = 100
+src = ["backend"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "ASYNC", "RUF"]
+ignore = ["B008", "RUF001", "RUF002", "RUF003"]
+
+[tool.mypy]
+python_version = "3.12"
+files = ["backend/homework_judge"]
+strict = true
+warn_unused_ignores = true
+
+[[tool.mypy.overrides]]
+module = ["pypdfium2.*", "sympy.*", "reportlab.*"]
+ignore_missing_imports = true
